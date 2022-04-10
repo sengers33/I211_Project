@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Our Classes{% endblock %}
+
+{% block content %}
+<h1>Good Vibes Yoga Classes</h1>
+<br>
+<br>
+{# Print out the data for each session #}
+    <div class="container"> 
+        <div class="row">
+            <table>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Duration</th>
+                {% for session in classes %}
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <tr>
+                        <td>{{classes[session]['date']}}</td>
+                        <td><a href="{{url_for('classes', session=session)}}">{{classes[session]['name']}}</a></td></a>
+                        <td>{{classes[session]['duration (min)']}}</td>
+                    </tr>
+                    </a>
+                    </a>
+                </div>
+            {% endfor %}
+            </table>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+{% endblock %}

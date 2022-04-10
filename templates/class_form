@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Class Form{% endblock %}
+
+{% block content %}
+
+<form method='POST' name='class_form'>
+    <div>
+        <label for="slug">Slug: </label>
+        <input type="text" id="slug" name="slug">  
+    </div> 
+    <div>
+        <label for="date">Date: </label>
+        <input type="text" id="date" name="date">       
+    </div>
+    <div>
+        <label for="name">Class Name: </label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="type">Type: </label>
+        <input type="text" id="type" name="type">
+    </div>
+    <div>
+        <label for="duration (min)">Duration: </label>
+        <input type="text" id="duration (min)" name="duration (min)">
+    </div>
+    <div>
+        <label for="level">Level: </label>
+        <select id="level" name="level" size="1">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+    </div>
+    <div>
+        <label for="trainer">Trainer: </label>
+        <input type="text" id="trainer" name="trainer">
+    </div>
+    <div>
+        <label for="description">Description</label>
+        <textarea id="description" name="description"></textarea> 
+    </div>
+    <button type="submit" name='button1' value="Submit">Save</button>
+    <button type="submit" name='button1' value="Update">Update</button>
+    <button type="reset" value="Reset">Reset</button>
+ </form>
+ <br>
+ <br>
+ <br>
+ 
+{% endblock %}

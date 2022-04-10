@@ -1,0 +1,27 @@
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+main > .container {	
+  padding: 100px 15px 0 !important;
+}
+
+table {
+  padding: 1em;
+  border-collapse: separate;
+}
+
+table tr {
+  height: 2em;
+  border-bottom: 4px solid white;
+}
+
+td {
+  background-color: rgb(242, 240, 240);
+}

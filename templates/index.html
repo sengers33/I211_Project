@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Yoga Home{% endblock %}
+
+{% block content %}
+<h1 style="text-align:center">Good Vibes Yoga</h1>
+<br>
+<figure>
+    <img class="img-fluid;" style="margin-left: auto; margin-right: auto; width: 100%;" src="{{url_for('static', filename='images/yoga_index.jpg')}}" alt="yoga_index">
+</figure>
+<br>
+<br>
+<h3 style="text-align:center;">About us</h3>
+<p style="width: 50%; margin-left: auto; margin-right: auto;">Good Vibes Yoga strives to be a leading yoga school for inclusivity and learning. We offer a
+    range of classes that will simplify the art for our beginners, as well as more challenging options
+    for the experienced yogi. Our instructors are friendly, and always willing to answer questions from
+    anyone in their classes, no matter their experience level. Feel free to check out our course listings,
+    and we look forward to seeing you in class.
+</p>
+<br>
+<br>
+{% endblock %}
