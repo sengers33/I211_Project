@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Our Classes{% endblock %}
+
+{% block content %}
+
+<figure>
+    <h1>{{classy['name']}}</h1>
+    <br>
+    <p><b>Date: </b>{{classy['date']}}</p>
+    <p><b>Duration (min): </b>{{classy['duration (min)']}}</p>
+    <p><b>Type: </b>{{classy['type']}}</p>
+    <p><b>Level: </b>{{classy['level']}}</p>
+    <p><b>Trainer: </b>{{classy['trainer']}}</p>
+    <p><b>Description: </b>{{classy['description']}}</p>
+</figure>
+<br>
+<div>
+    <button type="button" value="Button"><a href="{{url_for('class_form')}}">Edit</a></button>
+</div>
+<br>
+<br>
+{% endblock %}
